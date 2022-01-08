@@ -47,16 +47,35 @@ With:
 - PYGAZPAR_INFLUXDB2_ORG="name of your influxdb 2 organization"
 - PYGAZPAR_PYGAZPAR_LOGIN="login of your GRDF account"
 - PYGAZPAR_PYGAZPAR_PASSWORD="password of your GRDF password"
-- PYGAZPAR_PCE_IDENTIFIER="Identifier of your GRDF PCE (remove blanks from the PCE fiels taken from GRDF site)"
+
+- PYGAZPAR_PCE_IDENTIFIER="Identifier opf your GRDF PCE (remove blanks from the PCE fiels taken from GRDF site)"
+
 - PYGAZPAR_LASTNDAY="number of days of datas " by default put 10
+
+- PYGAZPAR_MQTT_URL="local ip host of your MQTT"
+- PYGAZPAR_MQTT_LOGIN="login of your MQTT"
+- PYGAZPAR_MQTT_PASSWORD="password of your MQTT"
+
+
+
+MQTT_KEEPALIVE_INTERVAL = 3600
+
 
 For Influxdb 1.8: (not tested)
 With:
 - PYGAZPAR_INFLUXDB2_HOST="local ip host of your Influxdb database:port of yourInfluxdb database" exemple: "192.168.1.20:8086"
 - PYGAZPAR_INFLUXDB2_TOKEN="USERNAME:PASSWORD of your Influxdb 1.8 database)" <------------------
-- PYGAZPAR_INFLUXDB2_BUCKET="nDATABASE/RETENTION of your Influxdb 1.8 database. for exemple home_assistant/autogen" <--------------------------
+
+- PYGAZPAR_INFLUXDB2_BUCKET="DATABASE/RETENTION of your Influxdb 1.8 database. for exemple home_assistant/autogen" <--------------------------
+
 - PYGAZPAR_INFLUXDB2_ORG="_" <-----------------------
 - PYGAZPAR_PYGAZPAR_LOGIN="login of your GRDF account"
 - PYGAZPAR_PYGAZPAR_PASSWORD="password of your GRDF password"
 - PYGAZPAR_PCE_IDENTIFIER="Identifier opf your GRDF PCE (remove blanks from the PCE fiels taken from GRDF site)"
+
 - PYGAZPAR_LASTNDAY="number of days of datas " by default put 10
+
+- PYGAZPAR_MQTT_URL="local ip host of your MQTT"
+- PYGAZPAR_MQTT_LOGIN="login of your MQTT"
+- PYGAZPAR_MQTT_PASSWORD="password of your MQTT"
+
