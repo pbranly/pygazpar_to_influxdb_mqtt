@@ -37,26 +37,26 @@ then add:
 0 */2 * * * docker restart pygazpar2
 
 
-Parameters to include in your .env file:
+Parameters to include in your .env file: (please note that all those fields are mandatory. Any field left blank will have as a consequence to crash the program)
 
 For Influxdb 2.0:
 With:
-- PYPAZPAR_INFLUXDB2_HOST="local ip host of your Influxdb database:port of yourInfluxdb database" exemple: "192.168.1.20:8086"
-- PYPAZPAR_INFLUXDB2_TOKEN="token of your Influxdb 2.0 data base (to find in influxdb)"
-- PYPAZPAR_INFLUXDB2_BUCKET="name of the influxdb 2 bucket in which you want to write gazpar data"
-- PYPAZPAR_INFLUXDB2_ORG="name of your influxdb 2 organization"
-- PYPAZPAR_PYGAZPAR_LOGIN="login of your GRDF account"
-- PYPAZPAR_PYGAZPAR_PASSWORD="password of your GRDF password"
-- PYPAZPAR_PCE_IDENTIFIER="Identifier opf your GRDF PCE (remove blanks)"
+- PYGAZPAR_INFLUXDB2_HOST="local ip host of your Influxdb database:port of yourInfluxdb database" exemple: "192.168.1.20:8086"
+- PYGAZPAR_INFLUXDB2_TOKEN="token of your Influxdb 2.0 data base (to find in influxdb)"
+- PYGAZPAR_INFLUXDB2_BUCKET="name of the influxdb 2 bucket in which you want to write gazpar data"
+- PYGAZPAR_INFLUXDB2_ORG="name of your influxdb 2 organization"
+- PYGAZPAR_PYGAZPAR_LOGIN="login of your GRDF account"
+- PYGAZPAR_PYGAZPAR_PASSWORD="password of your GRDF password"
+- PYGAZPAR_PCE_IDENTIFIER="Identifier of your GRDF PCE (remove blanks from the PCE fiels taken from GRDF site)"
 - PYGAZPAR_LASTNDAY="number of days of datas " by default put 10
 
 For Influxdb 1.8: (not tested)
 With:
-- PYPAZPAR_INFLUXDB2_HOST="local ip host of your Influxdb database:port of yourInfluxdb database" exemple: "192.168.1.20:8086"
-- PYPAZPAR_INFLUXDB2_TOKEN="USERNAME:PASSWORD of your Influxdb 1.8 database)" <------------------
-- PYPAZPAR_INFLUXDB2_BUCKET="nDATABASE/RETENTION of your Influxdb 1.8 database. for exemple home_assistant/autogen" <--------------------------
-- PYPAZPAR_INFLUXDB2_ORG="_" <-----------------------
-- PYPAZPAR_PYGAZPAR_LOGIN="login of your GRDF account"
-- PYPAZPAR_PYGAZPAR_PASSWORD="password of your GRDF password"
-- PYPAZPAR_PCE_IDENTIFIER="Identifier opf your GRDF PCE (remove blanks)"
+- PYGAZPAR_INFLUXDB2_HOST="local ip host of your Influxdb database:port of yourInfluxdb database" exemple: "192.168.1.20:8086"
+- PYGAZPAR_INFLUXDB2_TOKEN="USERNAME:PASSWORD of your Influxdb 1.8 database)" <------------------
+- PYGAZPAR_INFLUXDB2_BUCKET="nDATABASE/RETENTION of your Influxdb 1.8 database. for exemple home_assistant/autogen" <--------------------------
+- PYGAZPAR_INFLUXDB2_ORG="_" <-----------------------
+- PYGAZPAR_PYGAZPAR_LOGIN="login of your GRDF account"
+- PYGAZPAR_PYGAZPAR_PASSWORD="password of your GRDF password"
+- PYGAZPAR_PCE_IDENTIFIER="Identifier opf your GRDF PCE (remove blanks from the PCE fiels taken from GRDF site)"
 - PYGAZPAR_LASTNDAY="number of days of datas " by default put 10
