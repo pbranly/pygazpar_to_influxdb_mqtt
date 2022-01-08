@@ -1,4 +1,4 @@
 influxdb-client
-pygazpar==1.1.1
+pygazpar==1.1.2
 paho-mqtt
 
