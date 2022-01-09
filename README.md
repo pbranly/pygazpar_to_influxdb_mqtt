@@ -10,6 +10,8 @@ This repository is a fork of the https://github.com/Jeoffreybauvin/pygazpar_to_i
 
 A tentative configuration is described for Influxdb 1.8 but not tested
 
+This dedicated version includes a tentative MQTT writing
+
 ## Setup
 
 There is a Docker image ready to use : https://hub.docker.com/repository/docker/pbranly/pygazpar_to_influxdb
